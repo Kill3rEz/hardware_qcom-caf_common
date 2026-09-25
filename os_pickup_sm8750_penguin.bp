@@ -1,0 +1,9 @@
+// Soong namespace for the SM8750 (sun) CAF HALs (display + audio).
+// Imports the kernel-modules and pixel kernel_headers namespaces so the audio
+// AudioReach libs can reach qti_audio_kernel_uapi / kernel headers.
+soong_namespace {
+    imports: [
+        "kernel/oneplus/sm8750-modules",
+        "hardware/google/pixel/kernel_headers",
+    ],
+}
